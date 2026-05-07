@@ -691,19 +691,31 @@ footer {
     padding: 60px 32px;
   }
 
-  .hero-cta-bar {
-    flex-direction: column;
-    text-align: center;
-  }
-
   nav {
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
+    height: auto;
+    padding: 12px 20px;
   }
 
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 12px;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .social-links a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-image img {
+    max-height: 350px;
+    object-fit: cover;
   }
 
   .section { padding: 72px 22px; }
@@ -712,8 +724,72 @@ footer {
   footer { padding: 48px 22px 28px; }
 }
 
-@media (max-width: 480px) {
-  .nav-links { gap: 12px; }
+@media (max-width: 600px) {
+  .hero {
+    padding: 6px;
+  }
+
+  .hero-copy {
+    padding: 40px 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-copy p {
+    font-size: 0.95rem;
+  }
+
+  .logo-image img {
+    height: 40px;
+  }
+
+  nav {
+    padding: 10px 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.72rem;
+  }
+
+  .btn-nav {
+    padding: 10px 18px;
+    font-size: 0.75rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-strip-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-brand .footer-logo-image img {
+    width: 280px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-copy h1 {
+    font-size: 1.8rem;
+  }
+
+  .social-links a {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
 }
 
 </style>
