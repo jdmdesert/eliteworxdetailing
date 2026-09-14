@@ -73,7 +73,7 @@ export default function Home() {
       form.reset();
       setStatus("Quote request sent. We’ll be in touch soon.");
     } catch {
-      setStatus("We couldn’t send your request. Please call or text (623) 256-7184.");
+      setStatus("We couldn’t send your request. Please call or text 623.256.7184.");
     } finally {
       setSending(false);
     }
@@ -125,7 +125,7 @@ export default function Home() {
           <p className="hero-copy">A higher standard of vehicle care, delivered wherever you are.</p>
           <div className="hero-actions">
             <a className="button" href="#booking">Book Your Detail <span aria-hidden="true">→</span></a>
-            <a className="phone-link" href="tel:6232567184">Call (623) 256-7184</a>
+            <a className="phone-link" href="tel:6232567184">Call 623.256.7184</a>
           </div>
         </div>
         <a className="scroll-cue" href="#why-us">Explore <span aria-hidden="true">↓</span></a>
@@ -135,11 +135,11 @@ export default function Home() {
         <div className="section-heading">
           <p className="eyebrow">Why Elite Worx</p>
           <h2>We come to you.</h2>
-          <p>No drop-offs. No waiting rooms. We arrive fully equipped and leave your vehicle looking its best.</p>
+          <p>No drop offs. No waiting rooms. We arrive fully equipped and leave your vehicle looking its best.</p>
         </div>
         <div className="benefits">
           <article><span>01</span><h3>Fully Mobile</h3><p>At your home, office, or anywhere in the Valley.</p></article>
-          <article><span>02</span><h3>Pro-Grade Results</h3><p>Premium products and refined techniques on every vehicle.</p></article>
+          <article><span>02</span><h3>Pro Grade Results</h3><p>Premium products and refined techniques on every vehicle.</p></article>
           <article><span>03</span><h3>Local Care</h3><p>Proudly serving the Greater Phoenix area and surrounding cities.</p></article>
         </div>
       </section>
@@ -174,14 +174,14 @@ export default function Home() {
           <h2>Tell us about<br />your vehicle.</h2>
           <p>Share a few details and we’ll get back to you with pricing and availability.</p>
           <div className="direct-contact">
-            <a href="tel:6232567184">Call (623) 256-7184</a>
+            <a href="tel:6232567184">Call 623.256.7184</a>
             <a href="sms:6232567184">Text us</a>
           </div>
         </div>
         <form className="quote-form" onSubmit={submitQuote}>
           <label>Full name<input name="name" placeholder="Your name" required /></label>
           <label>Email<input type="email" name="email" placeholder="your@email.com" required /></label>
-          <label>Phone number<input type="tel" name="phone" placeholder="(___) ___-____" required /></label>
+          <label>Phone number<input type="tel" name="phone" placeholder="___.___.____" required /></label>
           <label>Vehicle<input name="vehicle" placeholder="Year / make / model" required /></label>
           <label>Package<select id="package" name="package" defaultValue="" required><option value="" disabled>Select a package</option><option value="Basic — $60+">Basic — Starting at $60</option><option value="Elite — $120+">Elite — Starting at $120</option></select></label>
           <label className="wide">Additional details<textarea name="message" placeholder="Stains, pet hair, preferred date or anything else we should know." /></label>
@@ -193,7 +193,7 @@ export default function Home() {
       <footer id="contact">
         <div className="footer-main">
           <div className="footer-brand"><img src="/logo-no-lines.png" alt="Elite Worx Detailing" /><p>Premium mobile auto detailing serving the Greater Phoenix area and surrounding cities.</p></div>
-          <div><p className="footer-label">Contact</p><a href="tel:6232567184">(623) 256-7184</a><a href="mailto:adrenersouza@gmail.com">adrenersouza@gmail.com</a><span>Greater Phoenix area and surrounding cities</span></div>
+          <div><p className="footer-label">Contact</p><a href="tel:6232567184">623.256.7184</a><a href="mailto:adrenersouza@gmail.com">adrenersouza@gmail.com</a><span>Greater Phoenix area and surrounding cities</span></div>
           <div><p className="footer-label">Quick links</p><div className="footer-social-links"><a href="tel:6232567184" aria-label="Call Elite Worx"><i className="fa-solid fa-phone" /></a>{socials.map(([label, href, icon]) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}><i className={icon} /></a>)}</div></div>
         </div>
         <div className="footer-bottom"><span>© 2026 Elite Worx Detailing</span><a href="#home">Back to top ↑</a></div>
