@@ -127,6 +127,7 @@ footer { padding: 80px clamp(24px, 7vw, 112px) 28px; background: #070808; border
   .mobile-hero-socials a { flex: 0 0 42px; width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; color: white; font-size: 15px; background: rgba(8,12,15,.24); backdrop-filter: blur(8px); }
   .mobile-hero-socials a:hover { border-color: var(--red); background: rgba(215,25,32,.16); }
   .hero-actions { flex-direction: column; gap: 17px; }
+  .scroll-cue { bottom: 8px; }
   .benefits, .package-grid, .booking, .footer-main { grid-template-columns: 1fr; }
   .benefits article, .benefits article + article { padding: 32px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .package ul { grid-template-columns: 1fr; }

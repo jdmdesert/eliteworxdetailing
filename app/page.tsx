@@ -180,7 +180,7 @@ export default function Home() {
         </div>
         <form className="quote-form" onSubmit={submitQuote}>
           <label>Full name<input name="name" placeholder="Your name" required /></label>
-          <label>Email<input type="email" name="email" placeholder="you@email.com" required /></label>
+          <label>Email<input type="email" name="email" placeholder="your@email.com" required /></label>
           <label>Phone number<input type="tel" name="phone" placeholder="(___) ___-____" required /></label>
           <label>Vehicle<input name="vehicle" placeholder="Year / make / model" required /></label>
           <label>Package<select id="package" name="package" defaultValue="" required><option value="" disabled>Select a package</option><option value="Basic — $60+">Basic — Starting at $60</option><option value="Elite — $120+">Elite — Starting at $120</option></select></label>
