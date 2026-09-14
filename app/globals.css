@@ -30,6 +30,7 @@ button, input, select, textarea { font: inherit; }
 .social-links a { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; color: rgba(255,255,255,.76); font-size: 13px; }
 .social-links a:hover { border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.06); }
 .menu-button { display: none; }
+.mobile-social-links { display: none; }
 
 .button {
   display: inline-flex; align-items: center; justify-content: center; gap: 28px; border: 0; border-radius: 2px;
@@ -119,6 +120,9 @@ footer { padding: 80px clamp(24px, 7vw, 112px) 28px; background: #070808; border
   .nav { position: absolute; top: 82px; left: 0; right: 0; display: none; flex-direction: column; gap: 0; background: rgba(10,12,14,.97); }
   .nav.open { display: flex; }
   .nav a { padding: 20px 24px; border-bottom: 1px solid var(--line); }
+  .nav .mobile-social-links { display: flex; flex-direction: row; align-items: center; gap: 14px; padding: 20px 24px 24px; }
+  .nav .mobile-social-links a { flex: 0 0 44px; width: 44px; height: 44px; padding: 0; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; color: white; font-size: 16px; }
+  .nav .mobile-social-links a:hover { border-color: var(--red); background: rgba(215,25,32,.12); }
   .header-actions { display: none; }
   .hero { min-height: 720px; background-position: 62% center; }
   .hero h1 { font-size: clamp(48px, 14vw, 70px); }
