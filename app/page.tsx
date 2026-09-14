@@ -98,12 +98,6 @@ export default function Home() {
           <a href="#why-us" onClick={() => setMenuOpen(false)}>Why Us</a>
           <a href="#packages" onClick={() => setMenuOpen(false)}>Packages</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-          <div className="mobile-social-links" aria-label="Social media and contact quick links">
-            <a href="tel:6232567184" aria-label="Call Elite Worx"><i className="fa-solid fa-phone" /></a>
-            {socials.map(([label, href, icon]) => (
-              <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}><i className={icon} /></a>
-            ))}
-          </div>
         </nav>
         <div className="header-actions">
           <div className="social-links" aria-label="Quick links">
@@ -119,6 +113,12 @@ export default function Home() {
       <section className="hero" id="home">
         <div className="hero-shade" />
         <div className="hero-content">
+          <div className="mobile-hero-socials" aria-label="Social media and contact quick links">
+            <a href="tel:6232567184" aria-label="Call Elite Worx"><i className="fa-solid fa-phone" /></a>
+            {socials.map(([label, href, icon]) => (
+              <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}><i className={icon} /></a>
+            ))}
+          </div>
           <p className="eyebrow">Premium mobile detailing · Greater Phoenix area</p>
           <h1>We bring the<br />detail shop to you</h1>
           <span className="red-line" />
